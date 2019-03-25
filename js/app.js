@@ -80,7 +80,7 @@ function confirmationPage () {
 
 function confirmRegister(){
   var regTimeStamp = Date.now;
-
+//if choices aren't full - would that be calling the registerHelper/seatsleft function again?
         $.post("https://script.google.com/macros/s/AKfycbwYRu3PatB_fa5ddYF1D9le5uOMQHi5Sw43qadPpDG7jaauNHVZ/exec",
         {
           Timestamp: regTimeStamp,
@@ -92,12 +92,21 @@ function confirmRegister(){
         });
         alert(`
               Thank you for registering for
-              Birchview Kids College 2018!\n
+              Birchview Kids College 2019!\n
               We hope you enjoy ${TheSession1Title} 
               and ${TheSession2Title}!\n
-              See you on April 20!
+              See you on April 26!
               `);
+  
+   //else post error message about choice being full, please choose again
+  alert(`
+          I'm sorry, your class is full and no
+          longer accepting registrations.
+          Please try your choices again!
+              `);
+        
         formReset();
+  
    // });
 }
 
