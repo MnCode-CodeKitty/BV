@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kids College 2018 Registration</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+  <body>
+
+    <div id="appheader">  
+      <div class="outerdiv" id="logodiv">
+        <img id="logodiv" src="images/logo.png">
+      </div>
+      <div id="headerWrapper">
+        <div id="headerLeft">
+          <div class="outerdiv" id="title1div">
+            <p><font id="titlefont"><strong>Kids College Registration</strong></font></p>
+          </div>
+          <div class="outerdiv" id="descdiv">
+            <p>Follow the steps to get started!</p>
+          </div>
+        </div>
+        <div id="headerRight">
+          <div id="studentBox">
+            &nbsp;
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="regFormDiv">
+    <form id="regForm">
+    <div id="col1">
+
+      
+      <!-- SELECT GRADE -->
+      <div class="outerdiv" id="regSelect">
+        <div id="stepTitle"><strong>Step 1: Select Your Grade</strong></div>
+        <select name="grade" onchange="selectGrade(this)" autofocus>
+          <option value="" disabled selected>Click to select grade</option>
+          <option value="00">Kindergarten</option>
+          <option value="01">Grade 1</option>
+          <option value="02">Grade 2</option>
+          <option value="03">Grade 3</option>
+          <option value="04">Grade 4</option>
+          <option value="05">Grade 5</option>
+        </select>
+      </div>
+
+    
+    <div class="outerdiv" id="regSelect">
+        <p id="listText"></p>
+    </div>
+    
+    <!-- SELECT TEACHER -->
+    <div class="outerdiv" id="regSelect">
+      <div id="stepTitle"><strong>Step 2: Select Your Teacher</strong></div>
+      <select id="teachers" onchange="selectTeachers(this,`cells.Teacher`)">
+        <option value="" disabled selected>Click to select teacher</option>
+        <script id="teacherTemplate">
+          <option>{{cells.Teacher}}</option>
+        </script>
+      </select>
+    </div>
+    
+    <!-- SELECT STUDENT -->
+    <div class="outerdiv" id="regSelect">
+      <p>
+      <div id="stepTitle"><strong>Step 3: Select Your Student</strong></div>
+      <select id="students" onchange="selectStudents(this)">
+        <option value="" disabled selected>Click to select student</option>
+        <script id="studentTemplate">
+          <option>{{cells.StudentFirstName}} {{cells.StudentLastName}}</option>
+        </script>
+      </select>
+      </p>
+    </div>
+        <!-- BUTTONS DIV -->
+    <div id="resetDiv">
+      <p>
+        <input id="chooseCoursesButton" type="button" value="Choose Courses" onclick="submitStudent()">
+        <input id="resetButton" type="reset" value="Start Over" onclick="formReset()">
+      </p>
+    </div>
+    
+    </div> <!-- END OF COL1 -->
+    </form>
+    </div>  
+       
+    <!-- START OF COL2 -->   
+    <div id="col2">
+    <div class="outerdiv" id="regSelect">
+      <div id="stepTitle">
+        <strong>Step 4: Select Session 1 Course</strong>
+        <input id="resetButton" type="reset" value="Start Over" onclick="formReset()">
+      </div>
+      
+      <container id="courseContainer">
+      <div id="courseRecord">
+          <script id="session1Template">
+            <p id="courseObject">
+            <div id="courseHeader">
+              <div id="courseHeaderTitle"><strong>{{cells.CourseTitle}}</strong></div>
+              <div id="courseHeaderTeacher">Teacher: <strong>{{cells.TeacherFirstName}} {{cells.TeacherLastName}}</strong></div>
+              <div id="courseHeaderLeft"></div>
+            </div>
+            <div>
+              <div id="courseDesc">
+                <p>{{cells.CourseDescription}}</p>
+
+                  <input type="button" id="chooseThisCourse" value="Choose this course" onclick="chooseSession1(`{{cells.CourseTitle}}`)">
+                Spots left: <strong>{{math cells.SessionLimit "-" cells.Session1Registered}}</strong>
+              </div>
+            </div>
+            </p>
+          </script>
+      </div>
+      </container>
+    </div>
+    </div>
+    <!-- END OF COL2 -->
+    
+    <!-- START OF COL3 -->   
+    <div id="col3">
+    <div id="regSelect">
+      <div id="stepTitle">
+        <strong>Step 5: Select Session 2 Course</strong>
+        <input id="resetButton" type="reset" value="Start Over" onclick="formReset()">
+      </div>
+      <container id="courseContainer2">
+      <div id="courseRecord2">
+          <script id="session2Template">
+            <p id="courseObject2">
+            <div id="courseHeader2">
+              <div id="courseHeaderTitle2"><strong>{{cells.CourseTitle}}</strong></div>
+              <div id="courseHeaderTeacher2">Teacher: <strong>{{cells.TeacherFirstName}} {{cells.TeacherLastName}}</strong></div>
+              <div id="courseHeaderLeft2"></div>
+            </div>
+            <div>
+              <div id="courseDesc2">
+                <p>{{cells.CourseDescription}}</p>
+
+                  <input type="button" id="chooseThisCourse" value="Choose this course" onclick="chooseSession2(`{{cells.CourseTitle}}`)">
+                Spots left: <strong>{{math cells.SessionLimit "-" cells.Session2Registered}}</strong>
+              </div>
+            </div>
+            </p>
+          </script>
+      </div>
+     </container>
+    </div>
+    </div>
+    <!-- END OF COL3 -->    
+
+    <!-- START OF COL4 -->   
+    <div id="col4" class="outerdiv">
+      <div id="confirmationPaper">
+        <p>
+          Please confirm your class selections and then click the appropriate button below.
+        </p>
+        <div id="confirmInfo">&nbsp;</div>
+      </div>
+    </div>
+    
+     <div id="footer"><a href='http://codekitty.org' target='_blank'><img src='images/CodeKittyLogoRaleWhite.png'></a></div>
+     
+    <!-- Load jQuery and Sheetrock from CDNJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>   
+    <script src="js/app.js" defer></script>
+  </body>
+</html>

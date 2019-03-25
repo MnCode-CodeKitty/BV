@@ -1,0 +1,5 @@
+***** From Birchview Kids College 2017 *****
+Courses: https://docs.google.com/spreadsheets/d/1lMPyW8yhlYa2P-pf0s2yAwEe9F9MaowGtsgpJ2Bn2Nc/edit#gid=1555010656
+Students: https://docs.google.com/spreadsheets/d/1lMPyW8yhlYa2P-pf0s2yAwEe9F9MaowGtsgpJ2Bn2Nc/edit#gid=0
+Script: $.post("https://script.google.com/macros/s/AKfycbwuYHmyQmqmKgju-WtQrILbGVIXQLxsZ81JSgMXTBvOK_RDfO--/exec",
+-------------------------------------------------------

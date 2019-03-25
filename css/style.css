@@ -1,0 +1,282 @@
+body {
+    background-image: url('../images/background.png');
+    background-color: #FFFFFF;
+    padding-left: 20px;
+}
+
+
+
+#appheader {
+    width: 23em;
+    color: #FFFFFF;
+}
+
+#headerWrapper {
+    width: 23em;
+    float: left;
+}
+
+#headerLeft {
+    float: left;
+    width: 7.5em;
+    text-align: center;
+}
+
+#headerRight {
+    float: left;
+    width: 13em;
+    max-height: 6em;
+}
+
+#studentBox {
+    margin-top: 1em;
+    height: 8em;
+    min-height: 8em;
+    padding: 6px 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: #444444;
+    color: #DDDDDD;
+    font-size: 11px;    
+}
+
+#regFormDiv {
+    width: 23em;
+    max-width: 23em;
+    padding: 0px;
+}
+#regForm {
+    /* for phone, and defaults */
+
+    border: none;
+    color: #FFFFFF;
+}
+
+#col1 {
+    /*float: left;*/
+    width: 23em;
+    max-width: 23em;
+}
+
+#descdiv {
+    width: 90%;
+}
+
+#col2 {
+    /* float: left; */
+    width: 23em;
+    max-width: 23em;
+}
+
+#col3 {
+    /* float: left; */
+    width: 23em;
+    max-width: 23em;
+}
+
+#col4 {
+    float: left;
+    width: 23em;
+    min-height: 19em;
+    background-color: #f0b310;
+    border: 2px solid black;
+    border-radius: 4px;
+    color: black;
+}
+
+#confirmationPaper {
+    width: 21em;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 10px;
+}
+
+select {
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: #CACACA;
+    color: #000000;
+    padding: 16px 32px;
+}
+
+#logodiv {
+    /* background-image: url('../images/CodeKittyLogoTrans300.png'); */
+    background-repeat: no-repeat;
+    width: 90%;
+    height: auto;
+}
+
+#titlefont {
+    font-size: large;
+}
+
+#regSelect {
+    color: #f0b310;
+}
+
+#stepTitle {
+    width: 23em;
+}
+
+select:focus {
+    border: 2px solid #f0b310;
+}
+
+#chooseCoursesButton {
+    background-color: #4CAF50;
+    border: 2px solid black;
+    border-radius: 4px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#chooseThisCourse {
+    background-color: #4CAF50;
+    border: 2px solid black;
+    border-radius: 4px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#confirmRegister {
+    background-color: #4CAF50;
+    border: 2px solid black;
+    border-radius: 4px;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input:focus {
+    border: 2px solid #f0b310;
+}
+
+input[type=reset] {
+    background-color: #AA6347;
+    border: 2px solid black;
+    border-radius: 4px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#courseContainer {
+    width: 100%;
+    float: left;
+}
+
+#courseContainer2 {
+    width: 100%;
+    float: left;
+}
+
+#courseRecord {
+    width: 23em;
+}
+
+#courseRecord2 {
+    width: 23em;
+}
+
+#session1Template{
+    border: 2px solid black;
+}
+
+#session2Template{
+    border: 2px solid black;
+}
+
+#courseObject {
+
+}
+
+#courseHeader {
+    height: 1.5em;
+    border: 2px solid black;
+    border-radius: 4px;
+    border-bottom: none;
+    padding: 10px;
+}
+
+#courseHeader2 {
+    height: 1.5em;
+    border: 2px solid black;
+    border-radius: 4px;
+    border-bottom: none;
+    padding: 10px;
+}
+
+#courseHeaderTitle {
+    float: left;
+    padding-right: 8px;
+    color: #FFFFFF;
+}
+
+#courseHeaderTeacher {
+    float: left;
+    padding-right: 8px;
+}
+
+#courseHeaderLeft {
+    float: left;
+    padding-bottom: 10px;
+}
+
+#courseDesc {
+    border: 2px solid black;
+    border-radius: 4px;
+    border-top: none;
+    padding: 10px;
+    background-color: #CACACA;
+    color: #000000;
+}
+
+#courseHeaderTitle2 {
+    float: left;
+    padding-right: 8px;
+    color: #FFFFFF;
+}
+
+#courseHeaderTeacher2 {
+    float: left;
+    padding-right: 8px;
+}
+
+#courseHeaderLeft2 {
+    float: left;
+    padding-bottom: 10px;
+}
+
+#courseDesc2 {
+    border: 2px solid black;
+    border-radius: 4px;
+    border-top: none;
+    padding: 10px;
+    background-color: #CACACA;
+    color: #000000;
+}
+
+#footer {
+    position: absolute;
+    top: .4em;
+    left: 19em;
+}
+
+#footer img {
+    width: 60px;
+    border: none;
+}
