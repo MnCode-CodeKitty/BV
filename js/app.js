@@ -96,11 +96,6 @@ function confirmRegister(){
               We hope you enjoy ${TheSession1Title} 
               and ${TheSession2Title}!\n
               See you on April 26!\n
-              Other vars:\n
-              regtimestamp ${regTimeStamp}\n
-              student ${selStudent}\n
-              grade ${selGrade}
-              teacher ${selTeacher}
               `);
   
    //else post error message about choice being full, please choose again
