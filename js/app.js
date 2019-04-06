@@ -2,7 +2,11 @@
 var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1NkVsOEoXGicyensK9Fn014-vCdeXk0q8ilXwA4HTISY/edit#gid=1827105956';
 
 // The publicCourseSheetUrl is the Courses tab of the sheet.  Copy from the address bar including gid!
-var publicCourseSheetUrl = 'https://docs.google.com/spreadsheets/d/1NkVsOEoXGicyensK9Fn014-vCdeXk0q8ilXwA4HTISY/edit#gid=1827105956';
+var publicCourseSheetUrl = 'https://docs.google.com/spreadsheets/d/1NkVsOEoXGicyensK9Fn014-vCdeXk0q8ilXwA4HTISY/edit#gid=1555010656';
+
+
+
+
 
 
 document.getElementById("studentBox").innerHTML = "<center><h3>Your info will go here!</h3></center>";
