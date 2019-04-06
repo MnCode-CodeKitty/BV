@@ -81,7 +81,7 @@ function confirmationPage () {
 function confirmRegister(){
   var regTimeStamp = Date.now;
 //if choices aren't full - would that be calling the registerHelper/seatsleft function again?
-        $.post("https://script.google.com/a/codekitty.org/d/1_6_wnUDFxsr3IrUzCnlOhQsBkZnE-AhL-owVWYHUGkVe290QftO52krj/edit",
+        $.post("https://script.google.com/macros/s/AKfycbww5HQk-6rSsALlQ84MLn5Eb9RqOsDQf05yqHjLuGWjWdSPHyM/exec",
         {
           Timestamp: regTimeStamp,
           Student: selStudent,
