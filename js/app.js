@@ -99,11 +99,11 @@ function confirmRegister(){
               `);
   
    //else post error message about choice being full, please choose again
-  //alert(`
-  //        I'm sorry, your class is full and no
-  //       longer accepting registrations.
-  //        Please try your choices again!
-  //            `);
+  alert(`
+          I'm sorry, your class is full and no
+         longer accepting registrations.
+          Please try your choices again!
+              `);
   //      
         formReset();
   
